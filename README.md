@@ -7,7 +7,7 @@ This repository contains my solutions for the five projects required for the fre
 | # | Project Title                | Status      |
 |---|------------------------------|-------------|
 | 1 | [Timestamp Microservice](./01-timestamp-microservice/) | Complete    |
-| 2 | Request Header Parser        | In Progress |
+| 2 | [Request Header Parser](./02-request-header-parser-microservice/) | Complete    |
 | 3 | URL Shortener Microservice   | To-Do       |
 | 4 | Exercise Tracker             | To-Do       |
 | 5 | File Metadata Microservice   | To-Do       |

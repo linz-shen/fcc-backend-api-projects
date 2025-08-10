@@ -31,16 +31,27 @@ var listener = app.listen(process.env.PORT || 3000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
 
-//timestamp router
+// timestamp router
 app.get('/api/:date?',(req,res)=>{
   let dateString =req.params.date;
-  let date=dateString?new Date(dateString):new Date();
-  if (date.toString()==='Invalid Date'){
-    return res.json({error: 'Invalid Date'})
-  }
-  res.json({
-    unix: date.getTime(),
-    utc: date.toUTCString()
-  });
-});
+  let date;
 
+  if(!dateString){
+    date =new Date();
+  }else{
+    if(/^\d+$/.test(dateString)){
+      date =new Date(parseInt(dateString));
+    }else{
+      date=new Date(dateString);
+    }
+  }
+
+  if (date.toString()==='Invalid Date'){
+    res.json({error: 'Invalid Date'});
+  }else{
+    res.json({
+      unix: date.getTime(),
+      utc: date.toUTCString()
+    });
+  }
+});
