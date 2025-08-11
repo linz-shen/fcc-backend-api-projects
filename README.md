@@ -9,7 +9,7 @@ This repository contains my solutions for the five projects required for the fre
 | 1 | [Timestamp Microservice](./01-timestamp-microservice/) | Complete    |
 | 2 | [Request Header Parser](./02-request-header-parser-microservice/) | Complete    |
 | 3 | [URL Shortener Microservice](./03-url-shortener-microservice/) | Complete    |
-| 4 | Exercise Tracker             | To-Do       |
+| 4 | [Exercise Tracker](./04-exercise-tracker/) | Complete    |
 | 5 | File Metadata Microservice   | To-Do       |
 
 ## About This Certification
